@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int length (const char * ptr) {
+    int i=0;
+    for (; ptr[i] ;i++);
+    return i;
+}
+
+int main () {
+    char str[20];
+    cout <<"enter a string :\t";
+    cin.getline (str , 20);
+    cout << length(str);
+    return 0;
+}
