@@ -11,12 +11,18 @@ void copy2 (char s1[] , const char s2[]) {
     for (int i =0 ; s1[i] = s2[i] ; i++);
 }
 
+void copy3 (char * s1 , const char * s2) {
+    while (*s1++ = *s2++) ;
+}
+
 int main () {
-    char str[20] , str3[20];
+    char str[20] , str3[20] , str4[20];
     const char str2[] = "hello";
     copy (str , str2) ;
     cout << str << endl;
     copy2 (str3 , str2);
-    cout<< str3;
+    cout<< str3<<endl;
+    copy3 (str4 , str3);
+    cout << str4;
     return 0;
 }
