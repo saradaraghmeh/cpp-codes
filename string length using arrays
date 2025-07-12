@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int length (const char * ptr) {
+int length (const char ptr[]) {
     int i=0;
     for (; ptr[i] ;i++);
     return i;
