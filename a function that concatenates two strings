@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+void Mystrcat (char * des , char * src) {
+    int i =0;
+    for (; des[i] ; i++);
+    for (int j=0 ; des[i] = src[j] ; i++ , j++);
+}
+
+int main () {
+    char s1 [20] = "my name is ";
+    char s2 [10] = "sara";
+    Mystrcat (s1 , s2);
+    cout << s1;
+    return 0;
+}
