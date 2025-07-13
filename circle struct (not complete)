@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cstring>
+#include <cmath>
+#include <string>
+using namespace std;
+
+struct point {
+    int x;
+    int y;
+};
+
+struct circle {
+    point center;
+    float raduis;
+    char * equation;
+};
+
+void FindEquation (circle & c) {
+    char h[2] , k[2] ,r2[10];
+    int r;
+    for (int)
+    h[0] = (char) c.center.x;
+    k[0] = (char) c.center.y;
+    strcpy (c.equation , "(x - ");
+    strcat (c.equation , h);
+    strcat (c.equation , ") + (y - ");
+    strcat (c.equation , k);
+    strcat (c.equation , ") = ");
+    strcat (c.equation , r2);
+    }
+    
+int main () {
+}
